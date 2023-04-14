@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+
+  /* primary */
+  --orange: hsl(25, 97%, 53%);
+  --button-light: rgb(39, 55, 71);
+
+  /* neutral */
+  --background-color: hsl(216, 12%, 8%);
+  --card-background: rgb(33, 40, 50);
+  --light-grey: rgb(124, 136, 152);
+  --medium-grey: hsl(216, 12%, 54%);
+  --font: "Noto Sans", sans-serif;
+  --font-size: 14px;
+}
+
+body {
+  background: var(--background-color);
+  font-size: var(--font-size);
+  font-family: var(--font);
+}
+
+.card-container {
+  width: 430px;
+  height: 400px;
+  background: var(--card-background);
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.card-container .card-content {
+  width: 400px;
+  height: 300px;
+}
+
+.card-container .card-content h1 {
+  font-size: 24px;
+}
+
+.card-container .card-content h1,
+p {
+  margin-top: 20px;
+  color: var(--white);
+}
+
+.card-container .card-content p {
+  color: var(--light-grey);
+  margin-top: 10px;
+  line-height: 20px;
+  font-size: 14px;
+  width: 370px;
+}
+
+.card-container .card-content .icon {
+  margin: 30px 0px;
+}
+
+.card-container .card-content .icon img {
+  background: var(--button-light);
+  border-radius: 100px;
+  padding: 12px;
+}
+
+.card-container .card-content .icon img:hover {
+  background: var(--medium-grey);
+}
+
+.card-container .card-content button[type="submit"] {
+  background: var(--orange);
+  border: none;
+  padding: 15px;
+  width: 90%;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 400px;
+  color: white;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.card-container button[type="submit"]:hover {
+  background: var(--white);
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.card-container .card-content .button-container {
+  text-align: center;
+}
+
+.card-container .card-content .button-container button {
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 50px;
+  width: 55px;
+  border: none;
+  background: var(--button-light);
+  color: white;
+}
+
+.card-container .card-content .button-container button:hover {
+  background: var(--medium-grey);
+}
+
+.message-card {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.message-card .selected p {
+  color: var(--orange);
+  background: var(--button-light);
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 200px;
+}
+
+.message-card .selected p {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.message-card h1 {
+  color: white;
+  margin-top: 5px;
+}
+
+.message-card p {
+  color: var(--light-grey);
+  line-height: 24px;
+}
+
+.show-error {
+  text-align: center;
+  margin-top: -30px;
+  color: red;
+}

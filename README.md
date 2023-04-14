@@ -11,8 +11,6 @@ Thanks for checking out this front-end coding challenge.
 ## The challenge
 This was overall the best challenge I faced in the frontend. I enjoyed it.
 
-Your users should be able to:
-
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Select and submit a number rating
